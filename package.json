@@ -1,16 +1,18 @@
 {
-  "name": "template-mailer-aws-lambda",
+  "name": "@rheactorjs/template-mailer-aws-lambda",
   "description": "A transactional email mailer that runs on AWS lambda and sends emails via SES",
-  "main": "TemplateMailer.js",
   "scripts": {
     "lint": "standard",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "precommit": "npm run lint",
     "commitmsg": "validate-commit-msg"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ResourcefulHumans/template-mailer-aws-lambda.git"
+    "url": "https://github.com/RHeactorJS/template-mailer-aws-lambda.git"
   },
   "keywords": [
     "aws",
@@ -22,9 +24,9 @@
   "author": "Resourceful Humans GmbH <info@resourceful-humans.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ResourcefulHumans/template-mailer-aws-lambda/issues"
+    "url": "https://github.com/RHeactorJS/template-mailer-aws-lambda/issues"
   },
-  "homepage": "https://github.com/ResourcefulHumans/template-mailer-aws-lambda#readme",
+  "homepage": "https://github.com/RHeactorJS/template-mailer-aws-lambda#readme",
   "dependencies": {
     "aws-sdk": "^2.6.15",
     "bluebird": "^3.4.6",
@@ -38,5 +40,8 @@
     "semantic-release": "^6.3.2",
     "standard": "^10.0.0-beta.0",
     "validate-commit-msg": "^2.8.2"
+  },
+  "engines": {
+    "node": ">=6.10.2"
   }
 }

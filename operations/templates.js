@@ -32,7 +32,7 @@ const retrieveTemplate = (repo, id) => {
         throw new Error('Template not found: ' + v.value)
       }
       return {
-        $context: 'https://github.com/ResourcefulHumans/template-mailer-aws-lambda/wiki/Template',
+        $context: 'https://github.com/RHeactorJS/template-mailer-aws-lambda/wiki/Template',
         $id: result.id,
         subject: result.subject,
         html: result.html,

@@ -6,7 +6,7 @@ const transportOperations = require('./operations/transport')
 const sendOperations = require('./operations/send')
 const Repository = require('./repository')
 const AWS = require('aws-sdk')
-const CONTENT_TYPE = 'application/vnd.resourceful-humans.template-mailer-aws-lambda.v2+json; charset=utf-8'
+const CONTENT_TYPE = 'application/vnd.rheactorjs.template-mailer.v2+json; charset=utf-8'
 const config = require('./config.json')
 
 exports.handler = (event, context, callback) => {

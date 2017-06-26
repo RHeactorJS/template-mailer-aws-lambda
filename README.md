@@ -86,14 +86,14 @@ Create the template `foo`:
 
     curl -v -X PUT https://XXXX.execute-api.YYYY.amazonaws.com/production/templates/foo \
     -H 'X-API-Key: ????' \
-    -H 'Content-Type: application/vnd.resourceful-humans.template-mailer-aws-lambda.v2+json; charset=utf-8' \
+    -H 'Content-Type: application/vnd.rheactorjs.template-mailer.v2+json; charset=utf-8' \
     --data '{"subject":"Mail for <%= name %>","html":"Hello <%= name %>"}'
 
 Create the transport `bar`:
 
     curl -v -X PUT https://XXXX.execute-api.YYYY.amazonaws.com/production/transport/bar \
     -H 'X-API-Key: ????' \
-    -H 'Content-Type: application/vnd.resourceful-humans.template-mailer-aws-lambda.v2+json; charset=utf-8' \
+    -H 'Content-Type: application/vnd.rheactorjs.template-mailer.v2+json; charset=utf-8' \
     --data '{"email":"info@example.com","name":"Example Inc."}'
 
 *Note: In order to use the email, you need to configure it in AWS SES.*
@@ -102,7 +102,7 @@ Send an email using the transport `bar` and the template `foo`:
     
     curl -v -X POST https://XXXX.execute-api.YYYY.amazonaws.com/production/send/bar/foo \
     -H 'X-API-Key: ????' \
-    -H 'Content-Type: application/vnd.resourceful-humans.template-mailer-aws-lambda.v2+json; charset=utf-8' \
+    -H 'Content-Type: application/vnd.rheactorjs.template-mailer.v2+json; charset=utf-8' \
     --data '{"to":"john.doe@example.com","name":"John Doe"}'
 
 ## Templates

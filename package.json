@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/RHeactorJS/template-mailer-aws-lambda#readme",
   "dependencies": {
-    "aws-sdk": "^2.133.0",
+    "aws-sdk": "^2.237.1",
     "bluebird": "^3.5.1",
     "joi": "^13.0.0",
     "lodash": "^4.17.4",
